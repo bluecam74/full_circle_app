@@ -1,0 +1,26 @@
+<h1>Transactions and Payments</h1>
+
+<form>
+    <h3>Submit a reimbursement request</h3>
+    <div class="form-group">
+        <label for="name">Amount (from reciept)</label>
+        <input type="text" class="form-control" id="amountReq">
+    </div>
+    <div class="form-group">
+        <input type="file" onchange="previewFile()"><br>
+        <img src="" id="img-prev" height="200" alt="Image preview...">
+    </div>
+    <button type="submit" class="btn btn-success" id="sub-req">Submit Request</button>
+</form>
+
+<input type="file" class="filepond" name="filepond" multiple data-max-file-size="3MB" data-max-files="3">
+
+<div class="container reqs">
+    <h3>Pending Requests</h3>
+    <div class="pend-trans">No Current Pending Requests</div>
+</div>
+
+<div class="container reqs">
+    <h3>Approved Requests</h3>
+    <div class="pend-trans">No Approved Requests At This Time</div>
+</div>

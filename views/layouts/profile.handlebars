@@ -1,0 +1,451 @@
+<<<<<<< HEAD
+<!--Navigation Bar-->
+<div class="profile">
+    <nav class="navbar navbar-expand-md navbar-trans navbar-inverse">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo_transparent copy 2.png" width="60px"
+                    height="60px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link" href="#" tabindex="-1" aria-disabled="true">Enabled</a>
+                </div>
+            </div>
+    </nav>
+</div>
+<!--Image Slider-->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/images/person_forest.jpg" alt="leaves">
+            <div class="carousel-caption">
+                <h3 class="display-2">Welcome to,</h3>
+                <h1 class="fcMain">Full Circle</h1>
+                <button type="button" class="btn btn-outline-light btn-md">Learn More</button>
+                <button type="button" class="btn btn-primary btn-md">Get Started</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/angel-leon-271147-unsplash.jpg" alt="leaves">
+            <div class="carousel-caption">
+                <h3 class="display-2">Bienvenido a,</h3>
+                <h1 class="fcMain">Full Circle</h1>
+                <button type="button" class="btn btn-outline-light btn-md">Aprende Mas</button>
+                <button type="button" class="btn btn-primary btn-md">Empezar</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/images/ricardo-gomez-angel-715679-unsplash.jpg" alt="leaves">
+            <div class="carousel-caption">
+                <h3 class="display-2">Welcome to,</h3>
+                <h1 class="fcMain">Full Circle</h1>
+                <button type="button" class="btn btn-outline-light btn-md">Learn More</button>
+                <button type="button" class="btn btn-primary btn-md">Get Started</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Jumbotron-->
+<!-- <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Full Circle is a new way for people in California to start recycling their bottles and
+                    recieve payment directly to their bank.
+                    We want to start making recycling easier one step at a time in order to promote
+                    environemtal-friendliness.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-outline-secondary btn-md">Learn More</button></a>
+            </div>
+        </div>
+    </div> -->
+<!--Dashboard Section/Welcome Section-->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">User Dashboard</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </div>
+    </div>
+</div>
+<!--Three Column Section-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="far fa-user-circle fa-4x"></i>
+            <h3>User Account</h3>
+            <p>View or edit your account details.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="far fa-money-bill-alt fa-4x"></i>
+            <h3>Transactions</h3>
+            <p>View your pending or past transactions.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fas fa-hat-wizard fa-4x"></i>
+            <h3>Recycle Wizard</h3>
+            <p>View what level of recycler you are at.</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+<!--Image Parallax-->
+<!--Search/Ratings Section/Two Column Section-->
+<div class="container-fluid padding">
+    <div class="row dashboard text-center">
+        <div class="col-md-12">
+            <h1 class="display-4">Bottle Recycle Finder</h1>
+            <hr class="rating-hr">
+            <p class="lead">To write a rating for one of these recycle centers please click the button below. Thank you!
+            </p>
+        </div>
+        <div class="col-md-12">
+            <button type="button" class="btn btn-outline-dark">Rate</button>
+        </div>
+        <div class="input-group mb-3 padding">
+            <input type="text" class="form-control" placeholder="Recycle" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            {{!-- <img src="assets/images/maps_placeholder.png" class="image-fluid" width="800px" height="400px"> --}}
+            <button id="btn-location">Find a Recycle center</button>
+            <div id="map" style="width: 600px; height: 400px; background: grey"></div>
+            <div id="panel" style="width: 600px;"></div>
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<!--Fixed Background-->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed"></div>
+    </div>
+</figure>
+<!--Emoji Section-->
+<!--Meet the Team-->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Meet the Team</h1>
+        </div>
+        <hr>
+    </div>
+</div>
+<!--Cards-->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/rain_leaf.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Jacob</h4>
+                    <p class="card-text">Hello, hello hello hello hello hello.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/rain_leaf.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Malak</h4>
+                    <p class="card-text">Hello, hello hello hello hello hello.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/rain_leaf.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Mario</h4>
+                    <p class="card-text">Hello, hello hello hello hello hello.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="assets/images/rain_leaf.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Rachel</h4>
+                    <p class="card-text">Hello, hello hello hello hello hello.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Two Column Section-->
+<div class="container-fluid padding">
+    <div class="row padding text-center">
+        <div class="col-lg-6">
+            <h2>Bottle Recycle Finder</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="assets/images/maps_placeholder.png" class="image-fluid" width="800px" height="400px">
+        </div>
+    </div>
+</div>
+<hr class="my-4">
+<!--Connect-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="light">
+                <img src="assets/images/logo_transparent copy 2.png" width="21px" height="21px">
+                <hr class="light">
+                <p>555-555-5555</p>
+                <p>contact@fullcirle.com</p>
+                <p>123 Science Street</p>
+                <p>Irvine, CA</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Our Hours</h5>
+                <hr class="light">
+                <p>M-F: 9AM-5PM</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Our Hours</h5>
+                <hr class="light">
+                <p>M-F: 9AM-5PM</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy; fullcircle.com</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script type='text/javascript' src='config.js'></script>
+=======
+  <body>
+    <!--Navigation Bar-->
+    <div class="profile">
+        <!--Image Parallax Header-->
+        <div class="parallax-window" data-parallax="scroll" data-image-src="../public/images/person_forest.jpg">
+            <nav class="navigation">
+                <ul>
+                    <li class="dashboardli"><a href="#">Log Out |</a></li>
+                    <li><a href="#">Recycle Centers |</a></li>
+                    <li><a href="#">Dashboard |</a></li>
+                    <hr class="navHR">
+                </ul>
+            </nav>
+            <h3 class="headWelcome">Welcome to,</h3>
+            <h1 class="headFC">Full Circle</h1>
+        </div>
+        <!--Dashboard Section/Welcome Section-->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">User Dashboard</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p class="lead">
+                        You are able to edit/view your account here. If you want to see your past transactions or the
+                        current money you have in your account view the Transaction image. Lastly, click on the wizard
+                        hat to see how much points and bottles you have recycled so far!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Three Column Section-->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="far fa-user-circle fa-4x"></i>
+                    <h3>User Account</h3>
+                    <p>View or edit your account details.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="far fa-money-bill-alt fa-4x"></i>
+                    <h3>Transactions</h3>
+                    <p>View your pending or past transactions.</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-hat-wizard fa-4x"></i>
+                    <h3>Recycle Wizard</h3>
+                    <p>View what level of recycler you are at.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+
+        <!--Image Parallax 2-->
+        <div class="parallax-window-2" data-parallax="scroll" data-image-src="../public/images/bottle_hand.jpg"></div>
+
+        <!--Search/Ratings Section/Two Column Section-->
+        <div class="container-fluid padding">
+            <div class="row dashboard text-center">
+                <div class="col-md-12">
+                    <h1 class="display-4">Bottle Recycle Finder</h1>
+                    <hr class="rating-hr">
+                </div>
+
+                <div class="input-group mb-3 padding">
+                    <input type="text" class="form-control" placeholder="Recycle" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <img src="../public/images/maps_placeholder.png" class="image-fluid" width="800px" height="400px">
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+
+        <!--Parallax 3-->
+        <div class="parallax-window-3" data-parallax="scroll" data-image-src="../public/images/deer_peekaboo.jpg"></div>
+
+        <!--Badges and Points/Two Column Section-->
+        <div class="container-fluid padding">
+            <div class="row padding text-center">
+                <div class="col-lg-6">
+                    <h2>Bottle Recycle Finder</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="../public/images/maps_placeholder.png" class="image-fluid" width="800px" height="400px">
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+
+        <!--Parallax 4-->
+        <div class="parallax-window-4" data-parallax="scroll" data-image-src="../public/images/girl_mountain.jpg"></div>
+
+        <!--Meet the Team-->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Meet the Team</h1>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <!--Cards For Meet the Team-->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/images/rain_leaf.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Jacob</h4>
+                            <p class="card-text">Hello, hello hello hello hello hello.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/images/rain_leaf.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Malak</h4>
+                            <p class="card-text">Hello, hello hello hello hello hello.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/images/rain_leaf.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Mario</h4>
+                            <p class="card-text">Hello, hello hello hello hello hello.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="../public/images/rain_leaf.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">Rachel</h4>
+                            <p class="card-text">Hello, hello hello hello hello hello.</p>
+                            <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h2>Connect With Us</h2>
+                    </div>
+                    <div class="col-12 social">
+                        <hr class="footerHR">
+                        <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-github fa-3x"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+>>>>>>> 6f484329d2dbf62ee238cfa912181908dd71c2b1
