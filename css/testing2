@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "Enter Numbers"
-
-for i in n
-do
-((result = n)
-echo $n square=$result
-done

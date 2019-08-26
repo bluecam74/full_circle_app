@@ -1,8 +1,0 @@
-#!bin/bash
-
-echo 1 2 3 4
-
-read x 
-
-echo $x
-
